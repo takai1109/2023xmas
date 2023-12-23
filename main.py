@@ -167,8 +167,10 @@ if st.session_state.next ==2:
                   
         if st.session_state.hai==True:
             with st.chat_message("user",avatar=img_npochamu):
-                st.write("そういえばー、このマークが書かれている箱がー、寝るところにー、あったような気がするっちゃむ")
-                st.write("そこの中に探し物があるはずっちゃむ")
+                st.write("もうしょうがないから んぽちゃむがそこまで案内するちゃむ！")
+                st.write("ついてくるちゃむ！")
+            with st.chat_message("user",avatar=img_ozi):
+                st.write("（この家の中で、んぽちゃむがいるところを探してね）")
             st.session_state.find = st.button("見つけた")
 
         if st.session_state.find:
@@ -185,7 +187,7 @@ if st.session_state.next == 3:
         st.image(img,use_column_width=True)         
         
         with st.chat_message("user",avatar=img_ozi):
-            st.write("以上で茶番は終了です。遊んでくれてありがとう！")
+            st.write("以上で終了です。遊んでくれてありがとう！")
         
        
 # a = st.slider("aa",0,100)
